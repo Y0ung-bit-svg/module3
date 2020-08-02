@@ -1,79 +1,131 @@
-.jumbotron {
-  text-align: center;
-  background-color: #7030A0;
-  color: white;
-}
-.buttons-menu .btn {
-  margin-top: 4px;
-  width: 200px;
-  font-size: 20px;
-}
-
-.medium-wide {
-  width: 300px;
-}
-#size {
-  margin-bottom:15px;
-}
-label {
-  font-size:20px;
-}
-.checkboxes {
-  font-size: 18px;
-}
-input[type="checkbox"] {
-  width: 18px;
-  height: 18px;
-}
 body {
-  background-image: url("../img/background.jpg");
-  background-repeat:no-repeat;
-  background-size: cover;
-  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  color: black;
+  background-color: white;
+  font-family: 'Oxygen', sans-serif;
 }
-#logo {
-  float: left;
-  width: 150px;
-}
-#pizza {
-  float: right;
-  width: 180px;
-}
-#waluigi-img, #waluigi2-img{
-  float: right;
-  margin-right:30px;
-}
-#waluigi1-img {
-  float: right;
-  width: 500px;
-}
-#waluigi-tennis-img {
-  float: right;
-  width: 500px;
 
+/** HEADER **/
+#header-nav {
+  background-color:white;
+  border-radius: 0;
+  border: 0;
 }
-.panel-heading {
+h2{
+  font-weight: bold;
+  color: black;
   text-align: center;
 }
-form {
-  margin:30px;
+.navbar-brand {
+  padding-top: 25px;
 }
-.about-text {
-  font-size: 19px;
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Lora', serif;
+  color: black;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
 }
-.initial-hidden {
-  display:none;
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
 }
-.has-error {
-  display:none;
+#nav-list {
+  margin-top: 10px;
 }
-#error-message {
-  color:#A94442;
+#nav-list a {
+  color: black;
+  text-align: center;
 }
-.order-summary p, li {
-  font-size:19px;
+#nav-list a:hover {
+  background: #E7E7E7;
 }
-.no-address {
-  color:#A94442;
-  font-size: 17px;
+#nav-list a span {
+  font-size: 1.8em;
 }
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid: black;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+/* END HEADER */
+/* BODY */
+
+h1 {
+	font-family: initial;
+	font-size: 30px;
+	text-align: center;
+	color: black;
+	margin-bottom: 30px;
+}
+
+p {
+	padding: 15px 5px 0px 5px;
+	font-family: initial;
+	font-size: 20px;
+	position: relative;
+}
+
+.section {
+	background-color: grey;
+   	border: 2px solid black;
+   	margin-top: 0px;
+   	margin-right: 0px;
+   	padding: 3px;
+   	text-align: justify;
+   	position: relative;
+ }
+ #a1 {
+ 	background-color: grey;
+   text-align: center;
+ }
+span {
+	font-size: 20px;
+	width: auto;
+	border: 0px solid black;
+	font-weight: bold;
+	text-align: center;
+	float: right; top :0; right: 0; margin: 0;
+	position: absolute;
+}
+
+
+.row {
+	width: 100%;
+}
+
+/* PC view */
+
+@media (min-width: 992px) {
+
+  .col-lg-4 {
+    width: 33.33%;
+    float: left;
+	}
+}
+
+/* Tablet view */
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .col-md-6 {
+    width: 50%;
+    float: left;
+  }
+  .col-md-12 {
+    width: 100%;
+    float: left;
+  }
+}
+
+/* mobile phone view */
+@media (max-width: 767px)  {
+
+  .col-sx-12 {
+  	float: left;
+    width: 100%;
+  }
